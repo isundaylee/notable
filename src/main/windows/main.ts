@@ -147,12 +147,12 @@ class Main extends Route {
           },
           {
             label: 'Open...',
-            accelerator: 'CmdOrCtrl+O',
+            accelerator: 'CmdOrCtrl+Alt+O',
             click: () => this.win.webContents.send ( 'quick-panel-toggle' )
           },
           {
             label: 'Open in Default App',
-            accelerator: 'CmdOrCtrl+Alt+O',
+            accelerator: 'CmdOrCtrl+O',
             enabled: keys && keys.hasNote && !keys.isMultiEditorEditing,
             click: () => this.win.webContents.send ( 'note-open-in-app' )
           },
